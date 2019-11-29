@@ -19,6 +19,7 @@ body {
   color: var(--darkgray);
   background-color: var(--white);
 }
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -150,8 +151,9 @@ pre {
   padding: 0;
 }
 .postlist-item {
+  margin-bottom: 14px;
   counter-increment: start-from -1;
-}
+/* }
 .postlist-item:before {
   display: inline-block;
   pointer-events: none;
@@ -159,24 +161,28 @@ pre {
   line-height: 100%;
   text-align: right;
 }
-.postlist-date,
-.postlist-item:before {
+.postlist-date, .postlist-item:before {
+  font-size: 0.8125em; /* 13px /16 */
+  color: var(--darkgray);
+} */
+.postlist-date {
   font-size: 0.8125em; /* 13px /16 */
   color: var(--darkgray);
 }
 .postlist-date {
-  word-spacing: -0.5px;
+  /* word-spacing: -0.5px; */
+  display: block;
+  font-size: 0.8em;
 }
 .postlist-link {
   display: inline-block;
-  padding: 0.25em 0.1875em; /* 4px 3px /16 */
 }
 .postlist-item-active .postlist-link {
   font-weight: bold;
 }
 .tmpl-home .postlist-link {
-  font-size: 1.1875em; /* 19px /16 */
-  font-weight: 700;
+  font-size: 1.025em;
+  line-height: 1.3em;
 }
 
 
@@ -196,6 +202,10 @@ pre {
 a[href].tag,
 a[href].tag:visited {
   color: #fff;
+}
+
+.tag-2 {
+  font-size: 0.9em; 
 }
 
 /* Warning */
